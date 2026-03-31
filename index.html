@@ -1,0 +1,182 @@
+<!-- CARD DESIGN -->
+
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+
+	
+
+    <h1>🎂 Happy Birthday <span>Goupu</span> 🎉</h1>
+
+    <div id="typing"></div>
+
+    <button class="btn btn-warning btn-custom mt-3" onclick="magic()">✨ Make a Wish</button>
+
+    <a id="whatsapp" class="btn btn-success btn-custom mt-3 d-block" target="_blank">
+    
+    </a>
+</div>
+
+<script>
+// 💌 Typing Effect (love Wish)
+let text =
+"Dear gaupu ❤️\n\nTumhe chahne ki aadat ho gayi ,maaf karna ,thodi himaqat ho  gayi niyat toh tumse dosti ki thi magar khamkha ,tumse mohabbat❤️ ho gayi  gaupu 😄. tum mera dream boy ho gaupu jiii🎂🥳 🎂 Happy Birthday Gaupu 🎉 Tum meri life ke hero ho 💪❤️ Hamesha khush raho!";
+
+let i = 0;
+function typeText(){
+    if(i < text.length){
+        document.getElementById("typing").innerHTML += 
+            text.charAt(i) === "\n" ? "<br>" : text.charAt(i);
+        i++;
+        setTimeout(typeText, 45);
+    }
+}
+typeText();
+
+// ✨ Stars Animation
+function magic(){
+    for(let i=0;i<35;i++){
+        let s = document.createElement("div");
+        s.className = "star";
+        s.innerHTML = "⭐";
+        s.style.left = Math.random()*100 + "vw";
+        s.style.top = Math.random()*100 + "vh";
+        document.body.appendChild(s);
+        setTimeout(()=>s.remove(),5000);
+    }
+}
+
+
+</script>
+
+</body>
+</html>
+
+
+   </head>
+   <body>
+      <h1>My Dream Boy</h1>
+	  <section class="d-flex row g-3 "> 
+	  <div class="card text-bg-dark text-center" style="width: width=100;"> 
+	 	      <img src="../singh1.jpeg" class="card-img-top" height="200px">
+		  <div class="card-body">
+		      <u><h2 class="card-title">7 Reason Why  I Love you</h2></u>
+			  <li>You make me happy</li>
+			  <li>You make me a better person...</li>
+			  <li>You are always there for me No matter what...</li>
+			  <li>You understand me...</li>
+			  <li>main Reason I can't imagine my life without you...</li>
+			  <li>You never give up on me,ever when i'm at my worst...</li>
+
+			  
+			  <button class="btn btn-link card-footer"></button>
+		  </div>
+	  </div>
+	  
+		  <div class="card w-25 text-bg dark text-center">
+			<div class="card text-bg-dark text-center" style="width: 100px;"> 
+			  <img src="../singh2.jpeg" class="card-img">
+			  <div class="card-body "> 
+				  <u><h2 class="card-title">Pyaar</h2></u>
+				  <p class="card-text">Puchte ho pyaar kya hai to suno phir....</p>
+				  <p class="card-text">&bull;Batao,pyaar kya hai..?</p>
+				  <p class="card-text">Jiska aawaz sun ke dil ko sukoon mile,wo hai pyaar</p>
+				  <p class="card-text">&bull;Achha ji aur...?</p>
+				  <p class="card-text">jisse baat kie bina neend na aae,woh hai pyaar..</p>
+				  <p class="card-text">&bull;Aur....?</p>
+				  <p class="card-text">Roz subah uthte hi sabse pehla message jise karo,woh hai pyaar....</p>
+				  <p class="card-text">&bull;Aur....?</p>
+				  <p class="card-text">jisse lakh jhagda kare par door na ho use manae,woh hai pyaar...</p>
+				  <p class="card-text">&bull;Ahaa kya baat hai....?</p>
+				  <p class="card-text">Aage to suno....</p>
+				  <p class="card-text">&bull;Haan haan sunao......</p>
+				  <p class="card-text">jiske bina aap reh nahi paate,woh hai pyaar..</p>
+				   <p class="card-text">&bull;Aurr...?</p>
+				 <p class="card-text">Aapke pass hazar option ho phir bhi aap usko dhundho,woh hai pyaar..</p>
+					<p class="card-text">&bull;Waah,Tumhare lie wo pyaar kaun hai....?</p>
+					 <p class="card-text">Meri lie woh pyaar ho tum..</p>
+					  <p class="card-text">&bull;Sacha...?</p>
+					   <p class="card-text">Sabse anmol daulat ho tum,Mera pasandida mard ho tum....</p>
+					    <p class="card-text text-black">&bull;💖🥰..</p>
+				  <button class="btn btn-link card-footer"></button>
+			   </div>
+		  </div>
+		  </div>
+	
+		  <div class="card w-25 text-bg-dark text-center">
+			<div class="card text-bg-dark text-center" style="width: 100px;"> 
+			  <img src="../singh6.jpeg" class="card-img">
+			  <div class="card-body">
+				  <u><h2 class="card-title">Gaupu</h2></u>
+				  <p class="card-text">Har kisi ke liye nahi Taraste hai Hum,,Tum Ek Laute Shaks Ho jis se be Intehaan Mohabbat Hai!!</p>
+				  <p class="card-text">Sorry na..</p>
+				  <p class="card-text">Nahi tum ladai karti ho..</p>
+				  <p class="card-text">Achha na,kabhi kabhi kar deti hun...</p>
+				  <p class="card-text">kabhi kabhi..</p>
+				  <p class="card-text">Par ladai se jayda pyaar na karti hun...</p>
+				  <p class="card-text">Sorry bol toh rahi hun,Sorry Sorry Sorry Sorry .</p>
+				  <p class="card-text">Mujhe apne pass rakh lo bilkul paresaan nahi karungi...</p>
+				  <p class="card-text">Noutanki ladki,,..</p>
+				 <p class="card-text">Hnn jesi bhi hun tumari hun..</p>
+				 <p class="card-text">Parish ladli..</p>
+				<p class="card-text">samjhe..</p>
+				<p class="card-text">Gaupu jiii..</p>
+				<p class="card-text">ILove You..</p>
+                <button class="btn btn-link"></button>
+			  </div>
+		  </div>
+		  </div>
+
+		    <div class="card w-25 text-bg-dark text-center">
+			<div class="card text-bg-dark text-center" style="width: 100px;"> 
+			  <img src="../singh5.jpeg" class="card-img">
+			  <div class="card-body">
+				  <u><h2 class="card-title">Tum mere liye kya ho?</h2></u>
+				  <p class="card-text">1.Humhari vibe ka favourite chapter</p>
+				  <p class="card-text">2.Dil ko calm karne wala moment</p>
+				  <p class="card-text">3.Ek unsaid connection ...jo bas feel hota hai</p>
+				  <p class="card-text">4."Stay"jaisa ek word,jo kahin bol nahi paate</p>
+				  <p class="card-text">5.Daily peace ka soft spot</p>
+				  <p class="card-text">6.humhari life ka silent blessing</p>
+				  <p class="card-text">7.Wo banda jisse hum ignore nahi kar paate</p>
+				  <p class="card-text">8.Heart ka safest place</p>
+				  <p class="card-text">9.Ek chhota sa magic</p>
+				 <p class="card-text">Wo ho tum mere liye Gaupu..</p>
+				<button class="btn btn-link"></button>
+			  </div>
+			  <div class="card-footer-love">💘</div>
+
+			  <div class="card w-25 text-bg-dark text-center">
+			<div class="card text-bg-dark text-center" style="width: 100px;"> 
+			  <img src="../singh7.jpeg" class="card-img">
+			  <div class="card-body">
+				  <u><h2 class="card-title">Mohabbat aadaton se nahi hoti, dil se hoti hai </h2></u>
+				  <p class="card-text">Agar tum mujhe jalane ke liye </p>
+				  <p class="card-text">Kisi aur ka haath pakad bhi lo,</p>
+				  <p class="card-text">to ye mat sochna ki main tumhe bhool jaungi.... </p>
+				  <p class="card-text">Maine tumhe tumhara in harkaton ke liye</p>
+				  <p class="card-text">kabhi pasand nahi kiya tha,</p>
+				  <p class="card-text">meri dil to us insaan ko chahta hai</p>
+				  <p class="card-text">jo tumhare andar kahin chhupa hai</p>
+				  <p class="card-text">Mohabbat aadaton se nahi hoti</p>
+				  <p class="card-text">dil se hoti hai</p>
+				  <p class="card-text">aur jab dil kisi ko chun leti hai</p>
+				  <p class="card-text">to uska kuch harkatein bhi </p>
+				  <p class="card-text">use bhulana nahi sikha paati....</p>
+				 <p class="card-text">I 💘 you For ever and ever and ever.......</p>
+				<button class="btn btn-link"></button>
+			  </div>
+	
+
+</div>
+		  </div>
+		  
+	 </section>	  
+		  	                                                                                                                                                                                               
+   </body>
+</html>
